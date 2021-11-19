@@ -193,6 +193,8 @@ nav li:hover a {
 #information {
     margin-top: 30px;
     margin-bottom: 30px;
+    display: flex;
+    align-items: center;
 }
 
 #information p {
@@ -248,6 +250,10 @@ main section a {
     align-items: center;
     margin: 0;
     height: auto
+}
+
+.hebergement_title a:hover {
+    color: #0065FC;
 }
 
 .hebergement_card{
@@ -360,6 +366,10 @@ main aside {
     object-fit: cover;
 }
 
+.pop_title a:hover {
+    color: #0065FC;
+}
+
 .pop_text {
     width: 60%;
     padding-left: 10px;
@@ -409,12 +419,12 @@ main aside {
     overflow: hidden;
 }
 
-/*.act_img img {
-    width: auto;
-}*/
-
 .act_text {
     margin-left: 20px;
+}
+
+.act_text a:hover {
+    color: #0065FC;
 }
  
 .activite_1 , .activite_2 , .activite_3 , .activite_4 , .activite_5 , .activite_6{
@@ -536,6 +546,9 @@ footer li {
     .sous_titre {
         font-size: 14px;
     }
+    .header_section h1 {
+        font-size: 20px;
+    }
     #filtre li {
         margin-bottom: 10px;
     }
@@ -545,12 +558,6 @@ footer li {
     #ancre_hebergement {
         margin-right: 0;
         width: 100%;
-    }
-    .titre_hebergement {
-        font-size: 0.78em;
-    }
-    .pop_top {
-        font-size: 0.78em;
     }
     .hebergement_card {
         width: 165px;
@@ -573,11 +580,8 @@ footer li {
         width: 100%;
         margin-bottom: 30px;
     }
-    .bs_top h2 {
-        font-size: 1.2em;
-    }
-    .bs_bottom .act_column1 , .bs_bottom .act_column2{
-        padding-bottom: 20px;
+    .activite_1 , .activite_3 {
+        margin-bottom: 50px;
     }
     footer {
         padding-left: 0;
@@ -594,10 +598,10 @@ footer li {
         margin-right: 0;
     }
     footer li {
-        font-size: 0.9em;
+        font-size: 16px;
     }
     .footer_block h2{
-        font-size: 1.2em;
+        font-size: 18px;
     }
 }
 
@@ -619,23 +623,27 @@ footer li {
         }
         .menu_item_actived {
             border-top: none;
-            border-bottom: solid 3px blue;
+            border-bottom: solid 3px #0065FC;
             padding-left: 50px;
             padding-right: 50px;
             padding-bottom: 10px;
             width: 50%;
             text-align: center;
+        }
+        .menu_item_actived:hover {
+            border-top: none;
         }
         #menu {
             justify-content: space-around;
         }
         #menu .menu_activite {
-            border-bottom: solid 3px gainsboro;
+            border-bottom: solid 3px #F2F2F2;
             padding-left: 50px;
             padding-right: 50px;
             padding-bottom: 10px;
             width: 50%;
             text-align: center;
+            border-top: none;
         }
         .rechercher {
             width: 50px;
@@ -653,14 +661,17 @@ footer li {
         .marker {
             width: 45px;
         }
+        .ville {
+            width: 190px;
+        }
         #recherche .ville {
             width: 220px;
         }
         #marseille {
             width: 230px;
         }
-        section h1 {
-            font-size: 18px;
+        .button_style {
+            width: 50px;
         }
         #filtre {
             width: 100%;
@@ -679,27 +690,8 @@ footer li {
             margin-right: 50px;
             margin-left: 50px;
         }
-        .ville {
-            width: 190px;
-        }
-        .button_style {
-            width: 50px;
-        }
-        .activite_1 , .activite_2 , .activite_3 , .activite_4 , .activite_5 , .activite_6 {
-            margin-bottom: 20px;
-        }
-        .ensemble_populaire {
-            margin-right: 30px;
-            margin-left: 30px;
-        }
-        #ancre_hebergement {
-            background-color: white;
-        }
-        .ensemble_hebergement {
-            margin: 0 30px 30px 30px;
-        }
-        .hebergement_card {
-            width: 100%;
+        section h1 {
+            font-size: 18px;
         }
         main {
             flex-wrap: wrap-reverse;
@@ -714,15 +706,33 @@ footer li {
             width: 100%;
             border: none;
         }
+        #ancre_hebergement {
+            background-color: white;
+        }
+        .ensemble_hebergement {
+            margin: 0 30px 30px 30px;
+        }
+        .hebergement_card {
+            width: 100%;
+            box-shadow: 5px 5px 5px #f4f4f4;
+        }
+        .ensemble_populaire {
+            margin-right: 30px;
+            margin-left: 30px;
+        }
         #bottomsection {
             margin: 30px;
         }
         .activite_1 , .activite_2 , .activite_3 , .activite_4 , .activite_5 , .activite_6 {
             width: 317px;
             height: 215px;
+            margin-bottom: 20px;
         }
         .footerblock {
             flex-direction: column;
             margin: 30px
+        }
+        .footer_block:nth-child(3) ul {
+            margin-bottom: 10px;
         }
 }
