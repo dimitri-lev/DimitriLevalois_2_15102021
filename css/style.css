@@ -252,7 +252,7 @@ main section a {
     height: auto
 }
 
-.hebergement_title a:hover {
+.text_card a:hover {
     color: #0065FC;
 }
 
@@ -366,7 +366,7 @@ main aside {
     object-fit: cover;
 }
 
-.pop_title a:hover {
+.pop_text a:hover {
     color: #0065FC;
 }
 
